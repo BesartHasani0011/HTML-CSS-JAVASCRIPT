@@ -1,0 +1,581 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@600&display=swap');
+
+:root {
+    --font-color: rgb(16, 14, 49);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    color: var(--font-color);
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: white;
+    overflow-x: hidden;
+
+}
+
+header {
+    width: 100%;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
+
+header .logo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+header .logo img {
+    width: 70px;
+}
+
+header .logo .photo {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header .logo p {
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 10px;
+}
+
+header form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header form input {
+    width: 95%;
+    height: 25px;
+    background-color: white;
+}
+
+header .social-media {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+header .social-media p {
+    text-align: center;
+    font-weight: bold;
+}
+
+header .social-media ul {
+    margin-top: 10px;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header .social-media ul li a:hover {
+    border-bottom: 2px solid var(--font-color);
+
+}
+
+.icon{
+    display: none;
+}
+
+.Time{
+    width: 300px;
+    display: flex;
+    float: right;
+    margin: 10px 10px 10px 0px;
+    justify-content: space-around;
+}
+
+main .photo img {
+    width: 100%;
+}
+
+main .photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .main-text-box {
+    width: 80%;
+    margin: 70px auto;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+main .main-text-box p,
+main .main-text-box a {
+    color: rgba(211, 215, 218, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .main-text-box .shop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .main-text-box .life {
+    font-size: 25px;
+}
+
+
+
+main .main-text-box .shop a {
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px;
+    background-color: rgba(12, 22, 54, 255);
+    border-radius: 10px;
+    transition: 0.5s ease;
+}
+
+main .main-text-box .shop a:hover {
+    background-color: rgb(7, 7, 129);
+}
+
+main .main-text-box p,
+main .main-text-box .shop {
+    display: flex;
+    align-items: center;
+}
+
+.top-selling {
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+
+.first-section .box {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.first-section .box:hover {
+    box-shadow: 6px 7px 22px 3px rgba(16, 14, 49, 0.75);
+    -webkit-box-shadow: 6px 7px 22px 3px rgba(16, 14, 49, 0.75);
+    -moz-box-shadow: 6px 7px 22px 3px rgba(16, 14, 49, 0.75);
+}
+
+.first-section .box a img {
+    width: 100%;
+    border: 1px solid black;
+}
+
+.first-section .box .description {
+    background-color: white;
+    text-align: justify;
+    border: 1px solid black;
+
+    padding: 8px;
+}
+
+.first-section .box .price {
+    background-color: white;
+    text-align: end;
+    padding: 8px;
+    border: 1px solid black;
+    border-top: 0px;
+
+}
+
+.first-section .box .description:hover {
+    text-decoration: underline;
+}
+
+#slideshow {
+    width: 80%;
+    margin: 0px auto;
+    margin-top: 50px;
+    border-top: 2px solid var(--font-color);
+
+}
+
+#slideshow_p{
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+    padding: 30px 0px 0px 0px;
+}
+
+#slideshow div {
+    display: flex;
+    justify-content: center;
+
+}
+
+#img{
+    width: 50%;
+}
+
+#slideshow div #ul{
+    list-style: none;
+}
+
+#ul li{
+    display: inline-block;
+    width: 50px;
+}
+
+#ul li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+
+}
+
+.second-section img {
+    width: 100%;
+}
+
+.second-section p,
+.second-section a {
+    color: rgba(211, 215, 218, 255);
+}
+
+.second-section{
+    transform: translateX(200%);
+    transition: transform 0.4s ease;
+}
+
+.second-section.show {
+    transform: translateX(0);
+}
+
+.second-section .text-box-second {
+    width: 70%;
+    margin: 90px auto;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.second-section .text-box-second p,
+.second-section .text-box-second .design {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.second-section .text-box-second .design-your {
+    font-size: 30px;
+}
+
+.second-section .design a {
+    font-size: 20px;
+    text-decoration: none;
+    padding: 5px;
+    background-color: rgba(12, 22, 54, 255);
+}
+
+.second-section .design a:hover {
+    background-color: rgb(7, 7, 129);
+}
+.ads{
+    width: 50%;
+    margin: 0px auto;
+    margin-top: 50px;
+    border: 2px solid var(--font-color);
+}
+
+.ads .button {
+    display: flex;
+    margin-left: 80%;
+    padding: 10px;
+
+}
+.ads .text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    text-align: center
+}
+
+
+footer {
+    margin-top: 50px;
+    border-top: 1px solid black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+footer .costumer-care,
+footer .about,
+footer .others {
+    display: grid;
+    grid-template-rows: 2fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+
+}
+
+footer .costumer-care p,
+footer .about p,
+footer .others p {
+    padding: 10px;
+    font-size: larger;
+}
+
+footer .costumer-care div,
+footer .about div,
+footer .others div {
+    padding: 10px;
+}
+
+footer .costumer-care div a,
+footer .about div a,
+footer .others div a {
+    text-decoration: none;
+}
+
+footer .costumer-care div a:hover,
+footer .about div a:hover,
+footer .others div a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width:640px) {
+    main {
+        margin-top: 30px;
+        background: rgb(22, 20, 21);
+        background: linear-gradient(15deg, rgba(22, 20, 21, 1) 0%, rgba(0, 0, 0, 1) 97%);
+        width: 100%;
+        display: grid;
+        grid-template-rows: 4fr 2fr;
+    }
+
+    .first-section {
+        width: 80%;
+        margin: 20px auto;
+        display: grid;
+        gap: 20px;
+        grid-template-columns: 1fr;
+    }
+
+    .second-section {
+        margin-top: 50px;
+        width: 100%;
+        display: grid;
+        grid-template-rows: 1fr 2fr;
+        background: black;
+    }
+
+    nav{
+        display: none;
+    }
+
+    nav.show {
+        display: block;
+    }
+
+    nav.show ul{
+        margin-left: 10%;
+        margin-top: 20px;
+        list-style: none;
+    }
+
+    nav.show ul ul{
+        margin-top: 5px;
+    }
+
+    nav.show ul li a{
+        text-decoration: none;
+    }
+
+    nav.show ul li {
+        padding: 5px 0px;
+    }
+    nav.show ul li:nth-child(1){
+        padding: 0px;
+    }
+
+    .Time{
+        margin-top: 35px;
+    }
+
+    .icon{
+        display: block;
+        float: right;
+        margin: 10px;
+    }
+
+    .mobile-nav {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 15px;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+        padding: 5px;
+        padding-right: 15px;
+    }
+
+    .mobile-nav p {
+        font-weight: bold;
+        padding: 5px;
+        padding-right: 10px;
+    }
+
+    .mobile-nav i{
+        font-size: 30px;
+    }
+}
+
+@media (min-width:640px) {
+    main {
+        margin-top: 30px;
+        background: rgb(22, 20, 21);
+        background: linear-gradient(15deg, rgba(22, 20, 21, 1) 0%, rgba(0, 0, 0, 1) 97%);
+        width: 100%;
+        display: grid;
+        grid-template-rows: 4fr 6fr;
+    }
+
+    .first-section {
+        width: 80%;
+        margin: 20px auto;
+        display: grid;
+        gap: 20px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .second-section {
+        margin-top: 50px;
+        width: 100%;
+        display: grid;
+        grid-template-rows: 1fr 1r;
+        background: black;
+
+    }
+
+    nav {
+        margin-top: 15px;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+        padding: 5px;
+
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    nav ul a:hover {
+        border-bottom: 2px solid var(--font-color);
+    }
+
+    nav ul li ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        background-color: white;
+        width: 100px;
+        display: none;
+    }
+
+    nav ul li ul li a {
+        height: 35px;
+        display: flex;
+        border-bottom: 0px !important;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 10px;
+    }
+
+    nav #dropDownBtn:hover ul{
+        display: block;
+    }
+
+    nav #dropDownBtn:hover ul li:hover{
+        background-color: rgb(218, 210, 210);
+        text-decoration: underline;
+    }
+
+
+    .mobile-nav {
+        display: none;
+    }
+}
+
+@media (min-width:1120px) {
+
+    main {
+        margin-top: 30px;
+        background: rgb(22, 20, 21);
+        background: linear-gradient(15deg, rgba(22, 20, 21, 1) 0%, rgba(0, 0, 0, 1) 97%);
+        width: 100%;
+        display: grid;
+        grid-template-columns: 4fr 6fr;
+        grid-template-rows: none;
+    }
+
+    .first-section {
+        width: 80%;
+        margin: 20px auto;
+        display: grid;
+        gap: 20px;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .second-section {
+        margin-top: 50px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background: black;
+
+    }
+
+    nav {
+        margin-top: 15px;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+        padding: 5px;
+
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    nav ul a:hover {
+        border-bottom: 3px solid var(--font-color);
+    }
+
+    .mobile-nav {
+        display: none;
+    }
+}
